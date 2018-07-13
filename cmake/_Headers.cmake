@@ -15,6 +15,8 @@ src/include-private.h
 
 set( PUBLIC_HEADERS
 src/Foundation.h
+src/NSDebug.h
+src/NSObjCRuntime.h
 src/import.h
 src/include.h
 ) 
