@@ -1,7 +1,1 @@
-/*
-   This file will will be overwritten once you have a sourcetree.
-   Until then it's just empty, which is fine.
-
-   DO NOT EDIT. YOUR CHANGES WILL BE LOST!
-
-*/
+      { @selector( MulleObjCLoader), @selector( MulleFoundation) },      // 47a9beb6;MulleObjCLoader;46ed3b36;MulleFoundation

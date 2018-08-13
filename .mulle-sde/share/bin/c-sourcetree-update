@@ -159,9 +159,7 @@ _emit_c_include()
    # TODO: remove support __has_include for C ? Not all C compilers have
    #       __has_include
    case ",${marks}," in
-      # could do #ifdefs for various OS, but seems pointless at the moment
-      # the heade is supposed to run everywhere
-      *',no-require,'*) #|*,"no-require-"*,*)
+      *,no-require,*)
          echo "# if __has_include(<${header}>)"
          echo "#  ${indent}${include} <${header}>   // ${address}"
          echo "# endif"
