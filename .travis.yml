@@ -21,4 +21,4 @@ before_install:
    - sudo apt-get -y install mulle-foundation-developer
 
 script:
-   - mulle-sde -v craft -V
+   - mulle-sde -v craft
