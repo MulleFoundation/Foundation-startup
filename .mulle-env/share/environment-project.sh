@@ -34,3 +34,21 @@ export PROJECT_DIALECT="objc"
 export PROJECT_EXTENSIONS="m:aam"
 
 
+#
+#
+#
+export PROJECT_IDENTIFIER="Foundation"
+
+
+#
+#
+#
+export PROJECT_DOWNCASE_IDENTIFIER="foundation"
+
+
+#
+#
+#
+export PROJECT_UPCASE_IDENTIFIER="FOUNDATION"
+
+
