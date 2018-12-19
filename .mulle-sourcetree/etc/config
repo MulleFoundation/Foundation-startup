@@ -1,1 +1,2 @@
 MulleFoundation;tar;;a59ff054-6279-4b87-ae82-6ba62b1f07b5;${MULLE_FOUNDATION_URL:-https://github.com/MulleFoundation/MulleFoundation/archive/${MULLE_FOUNDATION_BRANCH:-latest}.tar.gz};;;;
+mulle-objc-compat;tar;no-all-load;BD0E4FC1-56D9-4EF4-91D0-862D520A2ADC;${MULLE_OBJC_COMPAT_URL:-https://github.com/mulle-objc/mulle-objc-compat/archive/${MULLE_OBJC_COMPAT_BRANCH:-latest}.tar.gz};;;;
