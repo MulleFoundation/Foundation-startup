@@ -14,5 +14,5 @@ src/MulleObjCLoader+Foundation.m
 )
 
 set( STANDALONE_SOURCES
-src/foundation-standalone.m
+src/Foundation-standalone.m
 )
