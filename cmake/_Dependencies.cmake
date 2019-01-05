@@ -68,7 +68,7 @@ if( NOT MULLE_FOUNDATION_LIBRARY)
       #
       if( NOT NO_INHERIT_OBJC_LOADERS)
          foreach( _TMP_MULLE_FOUNDATION_NAME "MulleFoundation")
-            set( _TMP_MULLE_FOUNDATION_FILE "${_TMP_MULLE_FOUNDATION_ROOT}/include/${_TMP_MULLE_FOUNDATION_NAME}/objc-loader.inc")
+            set( _TMP_MULLE_FOUNDATION_FILE "${_TMP_MULLE_FOUNDATION_ROOT}/include/${_TMP_MULLE_FOUNDATION_NAME}/MulleObjCLoader+${_TMP_MULLE_FOUNDATION_NAME}.h")
             if( EXISTS "${_TMP_MULLE_FOUNDATION_FILE}")
                set( INHERITED_OBJC_LOADERS
                   ${INHERITED_OBJC_LOADERS}
