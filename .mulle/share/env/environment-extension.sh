@@ -1,13 +1,13 @@
 # Reset to empty
-export MULLE_SDE_UPDATE_CALLBACKS="sourcetree:source"
+export MULLE_SDE_UPDATE_CALLBACKS=
 
 
 # Used by `mulle-match find` to speed up the search.
-export MULLE_MATCH_FILENAMES="config:*.h:*.inc:*.c:CMakeLists.txt:*.cmake:*.m:*.aam"
+export MULLE_MATCH_FILENAMES="config"
 
 
 # Used by `mulle-match find` to locate files
-export MULLE_MATCH_PATH="${PROJECT_SOURCE_DIR}:CMakeLists.txt:cmake"
+export MULLE_MATCH_PATH=".mulle/etc/sourcetree/config"
 
 
 # Used by `mulle-match find` to ignore boring subdirectories like .git
