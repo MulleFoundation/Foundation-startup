@@ -19,8 +19,8 @@ Build Status | Release Version
 
 ## Install
 
-See [foundation-developer](//github.com/mulle-objc/foundation-developer)
-for installation instructions how to install via *apt* or *brew* or via an
+See [foundation-developer](//github.com/MulleFoundation/foundation-developer)
+for instructions how to install via *apt* or *brew* or via an
 installer script. There is also a "Dockerfile" available. It will install
 everything you need.
 
