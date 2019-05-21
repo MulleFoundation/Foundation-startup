@@ -5,9 +5,72 @@ if( MULLE_TRACE_INCLUDE)
    message( STATUS "# Include \"${CMAKE_CURRENT_LIST_FILE}\"" )
 endif()
 
+# sourcetree: OBJC_COMPAT;no-all-load,no-import,no-link;
+if( NOT OBJC_COMPAT_HEADER)
+   find_file( OBJC_COMPAT_HEADER NAMES objc-compat/objc-compat.h objc-compat.h)
+   message( STATUS "OBJC_COMPAT_HEADER is ${OBJC_COMPAT_HEADER}")
+
+   #
+   # Add to list of header files.
+   # Disable with: `mark no-cmakeadd`
+   #
+   set( HEADER_ONLY_LIBRARIES
+      ${OBJC_COMPAT_HEADER}
+      ${HEADER_ONLY_LIBRARIES}
+      CACHE INTERNAL "need to cache this"
+   )
+   if( OBJC_COMPAT_HEADER)
+      #
+      # Inherit ObjC loader and link dependency info.
+      # Disable with: `mark no-cmakeinherit`
+      #
+      get_filename_component( _TMP_OBJC_COMPAT_ROOT "${OBJC_COMPAT_HEADER}" DIRECTORY)
+      get_filename_component( _TMP_OBJC_COMPAT_NAME "${_TMP_OBJC_COMPAT_ROOT}" NAME)
+      get_filename_component( _TMP_OBJC_COMPAT_ROOT "${_TMP_OBJC_COMPAT_ROOT}" DIRECTORY)
+      get_filename_component( _TMP_OBJC_COMPAT_ROOT "${_TMP_OBJC_COMPAT_ROOT}" DIRECTORY)
+      #
+      # Search for "DependenciesAndLibraries.cmake" to include.
+      # Disable with: `mark no-cmakedependency`
+      #
+      foreach( _TMP_OBJC_COMPAT_NAME IN LISTS _TMP_OBJC_COMPAT_NAME)
+         set( _TMP_OBJC_COMPAT_DIR "${_TMP_OBJC_COMPAT_ROOT}/include/${_TMP_OBJC_COMPAT_NAME}/cmake")
+         # use explicit path to avoid "surprises"
+         if( EXISTS "${_TMP_OBJC_COMPAT_DIR}/DependenciesAndLibraries.cmake")
+            unset( OBJC_COMPAT_DEFINITIONS)
+            list( INSERT CMAKE_MODULE_PATH 0 "${_TMP_OBJC_COMPAT_DIR}")
+            # we only want top level INHERIT_OBJC_LOADERS, so disable them
+            if( NOT NO_INHERIT_OBJC_LOADERS)
+               set( NO_INHERIT_OBJC_LOADERS OFF)
+            endif()
+            list( APPEND _TMP_INHERIT_OBJC_LOADERS ${NO_INHERIT_OBJC_LOADERS})
+            set( NO_INHERIT_OBJC_LOADERS ON)
+            #
+            include( "${_TMP_OBJC_COMPAT_DIR}/DependenciesAndLibraries.cmake")
+            #
+            list( GET _TMP_INHERIT_OBJC_LOADERS -1 NO_INHERIT_OBJC_LOADERS)
+            list( REMOVE_AT _TMP_INHERIT_OBJC_LOADERS -1)
+            #
+            list( REMOVE_ITEM CMAKE_MODULE_PATH "${_TMP_OBJC_COMPAT_DIR}")
+            set( INHERITED_DEFINITIONS
+               ${INHERITED_DEFINITIONS}
+               ${OBJC_COMPAT_DEFINITIONS}
+               CACHE INTERNAL "need to cache this"
+            )
+            break()
+         else()
+            message( STATUS "${_TMP_OBJC_COMPAT_DIR}/DependenciesAndLibraries.cmake not found")
+         endif()
+      endforeach()
+   else()
+      message( FATAL_ERROR "OBJC_COMPAT_HEADER was not found")
+   endif()
+endif()
+
+
+
 # sourcetree: MULLE_FOUNDATION;;
 if( NOT MULLE_FOUNDATION_LIBRARY)
-   find_library( MULLE_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleFoundation)
+   find_library( MULLE_FOUNDATION_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}MulleFoundation${CMAKE_STATIC_LIBRARY_SUFFIX} MulleFoundation NO_CMAKE_SYSTEM_PATH)
    message( STATUS "MULLE_FOUNDATION_LIBRARY is ${MULLE_FOUNDATION_LIBRARY}")
    #
    # the order looks ascending, but due to the way this file is read
@@ -86,9 +149,9 @@ if( NOT MULLE_FOUNDATION_LIBRARY)
 endif()
 
 
-# sourcetree: MULLE_OBJC_COMPAT;no-all-load;
+# sourcetree: MULLE_OBJC_COMPAT;no-all-load,no-import;
 if( NOT MULLE_OBJC_COMPAT_LIBRARY)
-   find_library( MULLE_OBJC_COMPAT_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}mulle-objc-compat${CMAKE_STATIC_LIBRARY_SUFFIX} mulle-objc-compat)
+   find_library( MULLE_OBJC_COMPAT_LIBRARY NAMES ${CMAKE_STATIC_LIBRARY_PREFIX}mulle-objc-compat${CMAKE_STATIC_LIBRARY_SUFFIX} mulle-objc-compat NO_CMAKE_SYSTEM_PATH)
    message( STATUS "MULLE_OBJC_COMPAT_LIBRARY is ${MULLE_OBJC_COMPAT_LIBRARY}")
    #
    # the order looks ascending, but due to the way this file is read

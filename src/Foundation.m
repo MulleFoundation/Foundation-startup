@@ -1,6 +1,7 @@
-#include "include-private.h"
+#import "Foundation.h"
 
-#include "Foundation.h"
+#import "import-private.h"
+
 
 
 int   __FOUNDATION_ranlib__;
