@@ -1,32 +1,17 @@
-# Foundation
+# Foundation-startup
 
-💍 Convenient wrapper for the MulleFoundation
+This is a [mulle-sde](https://mulle-sde.github.io/) project.
 
-It's raison d´etre is to support `#import <Foundation/Foundation.h>`
-statements in Objective-C code. It also adds
-[objc-compat](//github.com/MulleFoundation/objc-compat) to the list of
-available dependencies.
+It has it's own virtual environment, that will be automatically setup for you
+once you enter it with:
 
-In content **Foundation** is identical to *MulleFoundation*. See the
-[MulleFoundation](//github.com/MulleFoundation/MulleFoundation)
-for more information.
+```
+mulle-sde Foundation-startup
+```
 
+Now you can let **mulle-sde** fetch the required dependencies and build the 
+project for you:
 
-Build Status | Release Version
--------------|-----------------------------------
-[![Build Status](https://travis-ci.org/MulleFoundation/Foundation.svg)](https://travis-ci.org/MulleFoundation/Foundation) | ![Community tag](https://img.shields.io/github/tag/MulleFoundation/Foundation.svg)
-
-
-## Install
-
-See [foundation-developer](//github.com/MulleFoundation/foundation-developer)
-for instructions how to install via *apt* or *brew* or via an
-installer script. There is also a "Dockerfile" available. It will install
-everything you need.
-
-
-## Author
-
-[Nat!](//www.mulle-kybernetik.com/weblog) for
-[Mulle kybernetiK](//www.mulle-kybernetik.com) and
-[Codeon GmbH](//www.codeon.de)
+```
+mulle-sde craft
+```
