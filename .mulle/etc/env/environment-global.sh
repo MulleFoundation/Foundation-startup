@@ -1,6 +1,6 @@
 #
 #
 #
-export PREFERRED_STARTUP_LIBRARY="Foundation-startup"
+export MULLE_SOURCETREE_TO_C_RUN="NO"
 
 
