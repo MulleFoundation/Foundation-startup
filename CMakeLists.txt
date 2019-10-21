@@ -16,8 +16,6 @@ include( Files)
 ### Library
 
 if( HEADERS_PHASE)
-   install( FILES ${CMAKE_INCLUDES} DESTINATION "include/${PROJECT_NAME}/cmake")
-
    # short cut out
    if( NOT COMPILE_PHASE AND NOT LINK_PHASE)
       return()
