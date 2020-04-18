@@ -31,7 +31,7 @@ if( STANDALONE)
    endif()
 
    if( NOT STANDALONE_DEFINITIONS)
-      set( STANDALONE_DEFINITIONS ${foundation_startup_DEFINITIONS})
+      set( STANDALONE_DEFINITIONS ${FOUNDATION_STARTUP_DEFINITIONS})
    endif()
 
    #
