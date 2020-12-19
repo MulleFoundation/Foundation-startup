@@ -1,0 +1,19 @@
+{
+   "name" : "Foundation-startup",
+   "version" : "0.18.0",
+   "description" : "▶️ Startup library for MulleFoundation",
+   "homepage" : "https://github.com/MulleFoundation/Foundation-startup",
+   "bugs" : "https://github.com/MulleFoundation/Foundation-startup/issues",
+   "keywords" : [],
+   "license" : "UNLICENSED",
+   "repository" : {
+      "type" : "git",
+      "url" : "MulleFoundation/Foundation-startup"
+   },
+   "dependencies" : {
+      "Foundation" : "MulleFoundation/Foundation",
+      "mulle-atinit" : "mulle-core/mulle-atinit",
+      "mulle-atexit" : "mulle-core/mulle-atexit",
+      "mulle-dlfcn" : "mulle-core/mulle-dlfcn"
+   }
+}
