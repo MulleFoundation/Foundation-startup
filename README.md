@@ -7,11 +7,6 @@ function for executables, that link against
 [Foundation](https://github.com/mulle-objc/Foundation).
 
 
-Build Status | Release Version
--------------|-----------------------------------
-[![Build Status](https://travis-ci.org/mulle-objc/Foundation-startup.svg)](https://travis-ci.org/mulle-objc/mulle-objc) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag/mulle-objc/Foundation-startup.svg) [![Build Status](https://travis-ci.org/mulle-objc/Foundation-startup.svg?branch=release)](https://travis-ci.org/mulle-objc/Foundation-startup)
-
-
 ## Sourcetree
 
 The main raison d'être of Foundation-startup as a
