@@ -7,19 +7,19 @@ export PROJECT_NAME="Foundation-startup"
 #
 #
 #
-export PROJECT_IDENTIFIER="Foundation_startup"
 
-
-#
-#
-#
-export PROJECT_DOWNCASE_IDENTIFIER="foundation_startup"
 
 
 #
 #
 #
-export PROJECT_UPCASE_IDENTIFIER="FOUNDATION_STARTUP"
+
+
+
+#
+#
+#
+
 
 
 #
