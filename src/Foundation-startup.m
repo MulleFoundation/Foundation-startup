@@ -14,9 +14,6 @@ static void   bang( struct _mulle_objc_universe *universe,
 {
    struct _mulle_objc_universeconfiguration   config;
 
-   memcpy( &config,
-           mulle_objc_global_get_default_universeconfiguration(),
-           sizeof( config));
-
+   mulle_foundation_universeconfiguration_set_defaults( &config);
    MulleFoundationBang( universe, allocator, &config);
 }
