@@ -16,6 +16,11 @@ seperate library is to bequeath the required dependencies
 executable.
 
 
+### You are here
+
+![Overview](overview.dot.svg)
+
+
 ## Install
 
 See [foundation-developer](//github.com/MulleFoundation/foundation-developer) for
