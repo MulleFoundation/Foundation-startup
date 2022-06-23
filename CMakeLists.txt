@@ -1,7 +1,6 @@
 cmake_minimum_required( VERSION 3.1)
 
 project( Foundation-startup C)
-add_definitions( -DFOUNDATION_STARTUP_EXTERN_GLOBAL=extern)
 
 
 
