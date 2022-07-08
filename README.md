@@ -4,7 +4,7 @@
 
 This static library provides the required `__register_mulle_objc_universe`
 function for executables, that link against
-[Foundation](https://github.com/mulle-objc/Foundation).
+[Foundation](//github.com/MulleFoundation/Foundation).
 
 
 ## Sourcetree
