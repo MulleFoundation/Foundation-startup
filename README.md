@@ -29,24 +29,32 @@ installation instructions.
 
 ## Build
 
-### Manually with cmake
+### Manual Installation
 
-Install all above prerequisites:
+*Don't do this, it will take hours...*
 
-now build the project
+Install the requirements:
 
+Requirements                                          | Description
+------------------------------------------------------|-----------------------
+[Foundation](//github.com/MulleFoundation/Foundation) | Foundation and its dependencies
+
+Install into `/usr/local`:
+
+
+``` sh
+cmake -B build \
+      -DCMAKE_INSTALL_PREFIX=/usr/local \
+      -DCMAKE_PREFIX_PATH=/usr/local \
+      -DCMAKE_BUILD_TYPE=Release &&
+cmake --build build --config Release &&
+cmake --install build --config Release
 ```
-(
-   mkdir build &&
-   cd build &&
-   cmake .. &&
-   make
-)
-```
+
 
 ### Conveniently with mulle-sde
 
-Install [mulle-sde]/(//github.com/mulle-sde) and run `mulle-sde craft`.
+Install [mulle-sde](//github.com/mulle-sde) and run `mulle-sde craft`.
 
 
 ### Platforms and Compilers
