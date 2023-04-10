@@ -6,8 +6,14 @@ This static library provides the required `__register_mulle_objc_universe`
 function for executables, that link against
 [Foundation](//github.com/MulleFoundation/Foundation).
 
+| Release Version                                       | Release Notes
+|-------------------------------------------------------|--------------
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag//Foundation-startup.svg?branch=release) [![Build Status](https://github.com//Foundation-startup/workflows/CI/badge.svg?branch=release)](//github.com//Foundation-startup/actions)| [RELEASENOTES](RELEASENOTES.md) |
 
-## Sourcetree
+
+
+
+## Info
 
 The main raison d'être of Foundation-startup as a
 seperate library is to bequeath the required dependencies
@@ -16,31 +22,49 @@ seperate library is to bequeath the required dependencies
 executable.
 
 
+
+## Requirements
+
+|   Requirement         | Release Version  | Description
+|-----------------------|------------------|---------------
+| [Foundation](https://github.com/MulleFoundation/Foundation) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag//.svg) [![Build Status](https://github.com///workflows/CI/badge.svg?branch=release)](https://github.com///actions/workflows/mulle-sde-ci.yml) | 💍 MulleFoundation with improved compatibility and legacy support
+| [mulle-atinit](https://github.com/mulle-core/mulle-atinit) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag//.svg) [![Build Status](https://github.com///workflows/CI/badge.svg?branch=release)](https://github.com///actions/workflows/mulle-sde-ci.yml) | 🤱🏼 Compatibility library for deterministic initializers
+| [mulle-atexit](https://github.com/mulle-core/mulle-atexit) | ![Mulle kybernetiK tag](https://img.shields.io/github/tag//.svg) [![Build Status](https://github.com///workflows/CI/badge.svg?branch=release)](https://github.com///actions/workflows/mulle-sde-ci.yml) | 👼 Compatibility library to fix atexit
+
 ### You are here
 
 ![Overview](overview.dot.svg)
 
+## Add
+
+Use [mulle-sde](//github.com/mulle-sde) to add Foundation-startup to your project:
+
+``` sh
+mulle-sde add github:MulleFoundation/Foundation-startup
+```
 
 ## Install
 
-See [foundation-developer](//github.com/MulleFoundation/foundation-developer) for
-installation instructions.
+### Install with mulle-sde
 
+Use [mulle-sde](//github.com/mulle-sde) to build and install Foundation-startup and all dependencies:
 
-## Build
+``` sh
+mulle-sde install --prefix /usr/local \
+   https://github.com/MulleFoundation/Foundation-startup/archive/latest.tar.gz
+```
 
 ### Manual Installation
 
-*Don't do this, it will take hours...*
-
 Install the requirements:
 
-Requirements                                          | Description
-------------------------------------------------------|-----------------------
-[Foundation](//github.com/MulleFoundation/Foundation) | Foundation and its dependencies
+| Requirements                                 | Description
+|----------------------------------------------|-----------------------
+| [Foundation](https://github.com/MulleFoundation/Foundation)             | 💍 MulleFoundation with improved compatibility and legacy support
+| [mulle-atinit](https://github.com/mulle-core/mulle-atinit)             | 🤱🏼 Compatibility library for deterministic initializers
+| [mulle-atexit](https://github.com/mulle-core/mulle-atexit)             | 👼 Compatibility library to fix atexit
 
-Install into `/usr/local`:
-
+Install **Foundation-startup** into `/usr/local` with [cmake](https://cmake.org):
 
 ``` sh
 cmake -B build \
@@ -51,21 +75,8 @@ cmake --build build --config Release &&
 cmake --install build --config Release
 ```
 
-
-### Conveniently with mulle-sde
-
-Install [mulle-sde](//github.com/mulle-sde) and run `mulle-sde craft`.
-
-
-### Platforms and Compilers
-
-All platforms and compilers supported by
-[mulle-c11](//github.com/mulle-c/mulle-c11/) and
-[mulle-thread](//github.com/mulle-concurrent/mulle-thread/).
-
-
 ## Author
 
-[Nat!](//www.mulle-kybernetik.com/weblog) for
-[Mulle kybernetiK](//www.mulle-kybernetik.com) and
-[Codeon GmbH](//www.codeon.de)
+[Nat!](https://mulle-kybernetik.com/weblog) for Mulle kybernetiK
+
+
