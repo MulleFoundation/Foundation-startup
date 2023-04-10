@@ -1,0 +1,39 @@
+{
+   project =
+   {
+      description="▶️ Startup library for MulleFoundation";
+      domain="github";
+      name="Foundation-startup";
+      user="MulleFoundation";
+      repo="Foundation-startup";
+      homepage="https://github.com/MulleFoundation/Foundation-startup";
+      license="BSD-3-Clause"
+   };
+   dependencies =
+   (
+      {
+         description="💍 MulleFoundation with improved compatibility and legacy support";
+         domain="github";
+         name="Foundation";
+         repo="Foundation";
+         url="https://github.com/MulleFoundation/Foundation";
+         user="MulleFoundation";
+      },
+      {
+         description="🤱🏼 Compatibility library for deterministic initializers";
+         domain="github";
+         name="mulle-atinit";
+         repo="mulle-atinit";
+         url="https://github.com/mulle-core/mulle-atinit";
+         user="mulle-core";
+      },
+      {
+         description="👼 Compatibility library to fix atexit";
+         domain="github";
+         name="mulle-atexit";
+         repo="mulle-atexit";
+         url="https://github.com/mulle-core/mulle-atexit";
+         user="mulle-core";
+      }
+   )
+}
