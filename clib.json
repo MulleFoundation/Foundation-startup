@@ -1,7 +1,7 @@
 {
    "name" : "Foundation-startup",
-   "version" : "0.20.3",
-   "description" : "Startup library for MulleFoundation",
+   "version" : "0.20.4",
+   "description" : "▶️  Startup code for the Foundation (mulle-objc)",
    "keywords" : [],
    "license" : "BSD-3-Clause",
    "repo" : "MulleFoundation/Foundation-startup",
