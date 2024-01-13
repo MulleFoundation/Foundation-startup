@@ -7,7 +7,7 @@
       user="MulleFoundation";
       repo="Foundation-startup";
       homepage="https://github.com/MulleFoundation/Foundation-startup";
-      license="BSD-3-Clause"
+      license="BSD-3-Clause";
    };
    dependencies =
    (
@@ -35,5 +35,5 @@
          url="https://github.com/mulle-core/mulle-atexit";
          user="mulle-core";
       }
-   )
+   );
 }
