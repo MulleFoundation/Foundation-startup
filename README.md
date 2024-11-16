@@ -47,8 +47,6 @@ mulle-sde add github:MulleFoundation/Foundation-startup
 
 ## Install
 
-### Install with mulle-sde
-
 Use [mulle-sde](//github.com/mulle-sde) to build and install Foundation-startup and all dependencies:
 
 ``` sh
@@ -56,7 +54,7 @@ mulle-sde install --prefix /usr/local \
    https://github.com/MulleFoundation/Foundation-startup/archive/latest.tar.gz
 ```
 
-### Manual Installation
+### Legacy Installation
 
 Install the requirements:
 
