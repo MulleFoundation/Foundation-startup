@@ -9,7 +9,7 @@ function for executables, that link against
 
 | Release Version                                       | Release Notes
 |-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/Foundation-startup.svg?branch=release) [![Build Status](https://github.com/MulleFoundation/Foundation-startup/workflows/CI/badge.svg?branch=release)](//github.com/MulleFoundation/Foundation-startup/actions) | [RELEASENOTES](RELEASENOTES.md) |
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleFoundation/Foundation-startup.svg) [![Build Status](https://github.com/MulleFoundation/Foundation-startup/workflows/CI/badge.svg)](//github.com/MulleFoundation/Foundation-startup/actions) | [RELEASENOTES](RELEASENOTES.md) |
 
 
 
