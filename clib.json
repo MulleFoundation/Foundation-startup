@@ -1,6 +1,6 @@
 {
    "name" : "Foundation-startup",
-   "version" : "0.20.4",
+   "version" : "0.20.7",
    "description" : "▶️  Startup code for the Foundation (mulle-objc)",
    "keywords" : [],
    "license" : "BSD-3-Clause",
@@ -9,8 +9,6 @@
       "src/Foundation-startup.m"
    ],
    "dependencies" : {
-      "MulleFoundation/Foundation": "*",
-      "mulle-core/mulle-atinit": "*",
-      "mulle-core/mulle-atexit": "*"
+      "MulleFoundation/Foundation": "*"
    }
 }

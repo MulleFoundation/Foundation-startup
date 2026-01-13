@@ -1,3 +1,8 @@
+### 0.20.7
+
+
+* simplified dependency documentation by removing transitive dependencies
+
 ### 0.20.6
 
 Various small improvements

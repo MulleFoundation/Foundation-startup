@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.13...99.99)
 
-project( Foundation-startup VERSION 0.20.6 LANGUAGES C)
+project( Foundation-startup VERSION 0.20.7 LANGUAGES C)
 
 
 
