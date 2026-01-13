@@ -3,11 +3,14 @@
    {
       description="▶️  Startup code for the Foundation (mulle-objc)";
       domain="github";
+      language="c";
+      dialect="objc";
       name="Foundation-startup";
       user="MulleFoundation";
       repo="Foundation-startup";
       homepage="https://github.com/MulleFoundation/Foundation-startup";
       license="BSD-3-Clause";
+      version="0.20.7";
    };
    dependencies =
    (
@@ -18,22 +21,6 @@
          repo="Foundation";
          url="https://github.com/MulleFoundation/Foundation";
          user="MulleFoundation";
-      },
-      {
-         description="🤱🏼 Compatibility library for deterministic initializers";
-         domain="github";
-         name="mulle-atinit";
-         repo="mulle-atinit";
-         url="https://github.com/mulle-core/mulle-atinit";
-         user="mulle-core";
-      },
-      {
-         description="👼 Compatibility library to fix atexit";
-         domain="github";
-         name="mulle-atexit";
-         repo="mulle-atexit";
-         url="https://github.com/mulle-core/mulle-atexit";
-         user="mulle-core";
       }
    );
 }
