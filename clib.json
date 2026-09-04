@@ -10,6 +10,7 @@
       "src/Foundation-startup.m"
    ],
    "dependencies" : {
-      "MulleFoundation/Foundation": "*"
+      "MulleFoundation/Foundation": "*",
+      "mulle-core/mulle-stacktrace": "*"
    }
 }
