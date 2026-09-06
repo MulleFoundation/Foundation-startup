@@ -1,16 +1,15 @@
 {
    "name" : "Foundation-startup",
-   "version" : "0.20.9",
+   "version" : "0.21.0",
    "description" : "▶️  Startup code for the Foundation (mulle-objc)",
    "keywords" : [],
    "license" : "BSD-3-Clause",
    "repo" : "MulleFoundation/Foundation-startup",
    "src" : [
-      "asset/dox/TOC.md",
+      "asset/dox/api/toc/index.md",
       "src/Foundation-startup.m"
    ],
    "dependencies" : {
-      "MulleFoundation/Foundation": "*",
-      "mulle-core/mulle-stacktrace": "*"
+      "MulleFoundation/Foundation": "*"
    }
 }
