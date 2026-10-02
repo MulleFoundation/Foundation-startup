@@ -22,3 +22,9 @@ export MULLE_MATCH_TO_C_RUN="NO"
 
 
 
+#
+#
+#
+export MULLE_CRAFT_USE_SCRIPTS="openssl-build.darwin"
+
+
