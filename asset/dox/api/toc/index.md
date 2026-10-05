@@ -72,10 +72,10 @@ lists "no headers"). The entire public surface is the single source file
 - **Purpose:** packed version of the library (major << 20, minor << 8, patch).
 
 ```c
-#define FOUNDATION__STARTUP_VERSION  ((0UL << 20) | (21 << 8) | 0)
+#define FOUNDATION__STARTUP_VERSION  ((0UL << 20) | (21 << 8) | 1)
 ```
 
-This evaluates to 0.21.0.
+This evaluates to 0.21.1.
 
 #### The `bang` callback (universe initialization)
 
@@ -234,7 +234,7 @@ void
       void (*callback)( FILE *fp));
 
 
-#define FOUNDATION__STARTUP_VERSION  ((0UL << 20) | (21 << 8) | 0)
+#define FOUNDATION__STARTUP_VERSION  ((0UL << 20) | (21 << 8) | 1)
 
 
 static void   bang( struct _mulle_objc_universe *universe,
