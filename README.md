@@ -57,7 +57,7 @@ mulle-sde install --prefix /usr/local \
    https://github.com/MulleFoundation/Foundation-startup/archive/latest.tar.gz
 ```
 
-### Legacy Installation
+### Manual Installation
 
 Install the requirements:
 

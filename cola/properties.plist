@@ -10,7 +10,6 @@
       repo="Foundation-startup";
       homepage="https://github.com/MulleFoundation/Foundation-startup";
       license="BSD-3-Clause";
-      version="0.21.1";
    };
    dependencies =
    (
